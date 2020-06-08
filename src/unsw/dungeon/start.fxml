@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="back_ground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="455.0" style="-fx-background-image: file:///Users/yingxu/Desktop/back.jpgfile:///Users/yingxu/Desktop/back.jpg;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <ImageView fitHeight="522.0" fitWidth="477.0" layoutY="-6.0">
+         <image>
+            <Image url="unsw/dungeon/img/back2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="body" layoutY="141.0" prefHeight="352.0" prefWidth="455.0">
+         <children>
+            <Button fx:id="EasyButton" cancelButton="true" defaultButton="true" layoutX="81.0" layoutY="92.0" mnemonicParsing="false" onAction="#HandleEasy" prefHeight="43.0" prefWidth="99.0" style="-fx-border-color: #c2fcff#c2fcff;" text="Easy" textOverrun="CLIP" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5955056179775281" centerY="0.5240384615384616" focusDistance="-0.1428571428571428" radius="1.0">
+                     <stops>
+                        <Stop color="#2ec976" />
+                        <Stop color="#cd532d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="RuleButton" cancelButton="true" defaultButton="true" layoutX="46.0" layoutY="292.0" mnemonicParsing="false" onAction="#HandleRule" prefHeight="37.0" prefWidth="168.0" text="Rules for Beginner" underline="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.4831460674157303" centerY="0.5240384615384616" focusDistance="-0.023809523809523725" radius="0.6071428571428572">
+                     <stops>
+                        <Stop color="#1458ff" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="MediumButton" cancelButton="true" defaultButton="true" layoutX="70.0" layoutY="158.0" mnemonicParsing="false" onAction="#HandleMedium" prefHeight="43.0" prefWidth="119.0" style="-fx-border-color: #c2fcff#c2fcff;" text="Medium" textOverrun="CLIP" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5955056179775281" centerY="0.5240384615384616" focusDistance="-0.1428571428571428" radius="1.0">
+                     <stops>
+                        <Stop color="#2ec976" />
+                        <Stop color="#cd532d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="HardButton" cancelButton="true" defaultButton="true" layoutX="82.0" layoutY="227.0" mnemonicParsing="false" onAction="#HandleHard" prefHeight="43.0" prefWidth="99.0" style="-fx-border-color: #c2fcff#c2fcff;" text="Hard" textOverrun="CLIP" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5955056179775281" centerY="0.5240384615384616" focusDistance="-0.1428571428571428" radius="1.0">
+                     <stops>
+                        <Stop color="#2ec976" />
+                        <Stop color="#cd532d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="349.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="unsw/dungeon/img/greenpotion.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="349.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="unsw/dungeon/img/treasures.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="349.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="unsw/dungeon/img/swoord.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="welcome" layoutX="39.0" layoutY="103.0" prefHeight="37.0" prefWidth="381.0" text="Welcome to the Dungeon Wolrd">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <Reflection>
+               <input>
+                  <Reflection />
+               </input>
+            </Reflection>
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.5337078651685393" centerY="0.5240384615384616" focusDistance="-0.023809523809523725" radius="0.6071428571428572">
+               <stops>
+                  <Stop color="#fff514" />
+                  <Stop color="#9cffdf" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
